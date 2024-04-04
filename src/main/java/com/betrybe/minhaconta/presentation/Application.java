@@ -1,6 +1,7 @@
 package com.betrybe.minhaconta.presentation;
 
 import com.betrybe.minhaconta.business.EnergyAccount;
+import com.ions.lightdealer.sdk.model.Client;
 import com.ions.lightdealer.sdk.model.ElectronicDevice;
 import com.ions.lightdealer.sdk.service.LightDealerApi;
 import java.util.Scanner;
@@ -44,7 +45,7 @@ public class Application {
    * Req. 5 – Run menu options.
    */
   public void runOptionAction(char option) {
-switch (option) {
+    switch (option) {
       case '1':
         registerClient();
         break;
@@ -72,6 +73,8 @@ switch (option) {
    * Req. 6 – Register client.
    */
   public void registerClient() {
+    Client client = new Client();
+    ui.fillClientData(client);
   }
 
   /**
