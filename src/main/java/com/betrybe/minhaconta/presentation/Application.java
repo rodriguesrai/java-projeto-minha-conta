@@ -98,6 +98,18 @@ public class Application {
    * Req. 8 – Register address devices.
    */
   public void registerAddressDevices() {
+    String matricula = ui.inputAddressRegistration();
+    Address address = api.findAddress(matricula);
+    if (address == null) {
+      ui.showMessage("Endereço não encontrado!");
+      return;
+    }
+    Integer devicesAmount = ui.inputNumberOfDevices();
+    for (int i = 0; i < devicesAmount; i++) {
+      ElectronicDevice device = new ElectronicDevice();
+      ui.fillDeviceData(device);
+      api.addDeviceToAddress(device, address);
+    }
   }
 
   /**
