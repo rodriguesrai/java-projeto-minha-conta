@@ -75,6 +75,7 @@ public class Application {
   public void registerClient() {
     Client client = new Client();
     ui.fillClientData(client);
+    api.addClient(client);
   }
 
   /**
