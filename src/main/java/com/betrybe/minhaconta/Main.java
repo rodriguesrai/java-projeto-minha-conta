@@ -3,7 +3,7 @@ package com.betrybe.minhaconta;
 import com.betrybe.minhaconta.presentation.Application;
 import com.betrybe.minhaconta.presentation.ConsoleUserInterface;
 import java.util.Scanner;
-
+// começando projeto
 /**
  * Project starts here.
  */
