@@ -3,12 +3,11 @@ package com.betrybe.minhaconta;
 import com.betrybe.minhaconta.presentation.Application;
 import com.betrybe.minhaconta.presentation.ConsoleUserInterface;
 import java.util.Scanner;
-// começando projeto
 /**
  * Project starts here.
  */
-public class Main {
 
+public class Main {
   /**
    * The entry point of application.
    */
